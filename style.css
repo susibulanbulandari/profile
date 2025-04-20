@@ -1,0 +1,174 @@
+/* Reset CSS dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body dengan gradasi + gambar */
+  body {
+    font-family: 'Poppins', 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #ff0000, #ffffff);
+    background-image: url("bacground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #7fd8ee;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  /* Container utama */
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Card dengan efek kaca */
+  .card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+  }
+  
+  /* Header & Profil */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #69d1fd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+  }
+  
+  .profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+    color: #f0f4f5;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .bio {
+    font-size: 1rem;
+    color: #212222;
+    font-weight: 500;
+    max-width: 90%;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Link buttons */
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+  
+  .link-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: #7fdfff;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-left: 5px solid transparent;
+    backdrop-filter: blur(5px);
+    word-break: break-word;
+  }
+  
+  .link-button i {
+    margin-right: 10px;
+    font-size: 1.3rem;
+  }
+  
+  /* Warna masing-masing platform */
+  .link-button.instagram { border-left-color: #72cff7; }
+  .link-button.instagram:hover { background-color: rgba(225, 48, 108, 0.8); }
+  
+  .link-button.youtube { border-left-color: #83dcf9; }
+  .link-button.youtube:hover { background-color: rgba(255, 0, 0, 0.8); }
+  
+  .link-button.facebook { border-left-color: #81d9f4; }
+  .link-button.facebook:hover { background-color: rgba(24, 119, 242, 0.8); }
+  
+  .link-button.maps {
+    background-color: aquamarine;
+  }
+  .link-button.maps:hover {
+    background-color: #72cff7;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #fff;
+    margin-top: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Responsif mobile */
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .card {
+      padding: 20px 15px;
+      border-radius: 16px;
+    }
+  
+    .profile-pic {
+      width: 110px;
+      height: 110px;
+    }
+  
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .bio {
+      font-size: 0.9rem;
+    }
+  
+    .link-button {
+      padding: 12px;
+      font-size: 0.95rem;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+  
+    .link-button i {
+      margin-right: 8px;
+      font-size: 1.1rem;
+    }
+  }
+  
