@@ -119,13 +119,9 @@
   .link-button.facebook { border-left-color: #81d9f4; }
   .link-button.facebook:hover { background-color: rgba(24, 119, 242, 0.8); }
   
-  .link-button.maps {
-    background-color: aquamarine;
-  }
-  .link-button.maps:hover {
-    background-color: #72cff7;
-  }
-  
+  .link-button.maps { border-left-color:#81d9f4; }
+  .link-button.maps:hover { background-color: rgb(177, 239, 218);}
+   
   /* Footer */
   footer {
     text-align: center;
